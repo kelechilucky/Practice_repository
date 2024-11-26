@@ -1,5 +1,15 @@
-const sign_in_btn = document.getElementById("sign_in_btn");
+const toggleMenu = document.getElementById("toggleMenu");
+const hideMenu = document.getElementById("hideMenu");
+const sidebar = document.getElementById("sidebar");
 
-sign_in_btn.addEventListener("click", function () {
-  console.log("clicked");
+toggleMenu.addEventListener("click", () => {
+  sidebar.classList.toggle("show");
+  hideMenu.classList.toggle("showClose");
+  toggleMenu.classList.toggle("hideMenu");
+});
+
+hideMenu.addEventListener("click", () => {
+  sidebar.classList.remove("show");
+  hideMenu.classList.remove("showClose");
+  toggleMenu.classList.remove("hideMenu");
 });

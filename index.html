@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>header_1</title>
-    <link rel="stylesheet" href="./file.css">
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
+  </head>
+  <body class="px-12 py-8 w-[100%] h-[100vh] overflow-x-hidden">
     <header>
+      <!-- NAV BAR -->
 
-        <!-- NAV BAR -->
-  
-        <nav>
-          <span class="">Startup 3</span>
-          <div>
-            <ul>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">How it Works</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-            <button>Login</button>
-            <button id="sign_in_btn">Sign In</button>
+      <nav
+        class="nav_color flex lg:flex items-center justify-between gap-4 h-auto w-[100%]"
+      >
+        <span class="font-bold text-[22px] cursor-pointer">Startup 3</span>
+        <div
+          id="sidebar"
+          class="hidden lg:flex lg:flex-row items-center justify-center gap-5 w-[100%] lg:w-auto"
+        >
+          <!-- Navigation links list -->
+          <ul
+            class="flex flex-col lg:flex lg:flex-row items-center justify-center gap-4 w-[100%] lg:w-auto m-auto"
+          >
+            <li class="text-[15px] font-semibold"><a href="#">Portfolio</a></li>
+            <li class="text-[15px] font-semibold">
+              <a href="#">How it Works</a>
+            </li>
+            <li class="text-[15px] font-semibold"><a href="#">Pricing</a></li>
+            <li class="text-[15px] font-semibold"><a href="#">About</a></li>
+          </ul>
+          <!-- Buttons section -->
+          <div
+            class="flex flex-col lg:flex lg:flex-row items-center justify-center gap-4 mt-2 lg:mt-0"
+          >
+            <button class="text-[15px] font-semibold">Login</button>
+            <button
+              class="text-[15px] font-semibold rounded-full px-3 py-1 border-[2px]"
+            >
+              Sign In
+            </button>
           </div>
-        </nav>
-  
-        <!-- HERO SECTION -->
-         
-        <!-- <div class="hero">
-          <h1>
-            A high-quality solution startup website quickly
-          </h1>
-          <button>Get Started</button>
-  
-          <div class="screen_img">
-            <img src="./IMAGE.png" alt="a desktop screen display" />
-          </div>
-  
-          <div class="threepara">
+        </div>
+        <div id="toggleMenu" class="flex lg:hidden text-[40px]">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div id="hideMenu" class="text-[40px] hidden">
+          <i class="bx bx-x"></i>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+
+      <div class="mt-20">
+        <h1
+          class="text-[25px] lg:text-[50px] text-center w-[100%] lg:w-[70%] m-auto nav_color font-semibold"
+        >
+          A high-quality solution startup website quickly
+        </h1>
+        <div
+          class="mt-10 py-3 rounded-full border text-white nav_btn2 w-[150px] m-auto"
+        >
+          <button class="px-3 m-auto w-[100%]">Get Started</button>
+        </div>
+
+        <div class="mt-10 w-[70%] m-auto">
+          <img
+            class="w-[800px] h-[150px] lg:h-[450px]"
+            src="./img/MacBook_Pro.png"
+            alt="a desktop screen display"
+          />
+        </div>
+
+        <!-- <div class="threepara">
             <p class="first_p">
               Startup Framework works on devices supporting Retina Display. Feel
               the clarity in each pixel.
@@ -52,11 +89,10 @@
               Startup Framework works on devices supporting Retina Display. Feel
               the clarity in each pixel.
             </p>
-          </div>
-        </div> -->
-        
-      </header>
-  
-      <script src="./app.js"></script>
-</body>
+          </div> -->
+      </div>
+    </header>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
