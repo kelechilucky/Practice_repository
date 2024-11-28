@@ -13,14 +13,37 @@
   </head>
   <body>
     <header class="h-screen w-[100%] px-12 py-6 bg-[#2F1893] text-white">
-      <nav class="flex items-center justify-between">
-        <span class="font-semibold text-[25px]">Startup 3</span>
-        <ul class="flex space-x-4">
+      <nav class="flex lg:flex items-center justify-between w-[100%] h-auto">
+        <span class="font-bold text-[25px]">Startup 3</span>
+        <ul
+          id="sidebar"
+          class="hidden lg:flex lg:flex-row items-center justify-between lg:gap-5"
+        >
           <a href="#"><li>Subscribe</li></a>
           <a href="#"><li>Features</li></a>
-          <a href="#"><li>Sign Up</li></a>
+          <a
+            class="flex px-6 py-2 lg:px-4 lg:py-2 bg-[#482BE7] rounded-full"
+            href="#"
+            ><li>Sign Up</li></a
+          >
         </ul>
+        <div id="toggleMenu" class="lg:hidden text-[40px]">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div id="hideMenu" class="text-[40px] hidden">
+          <i class="bx bx-x"></i>
+        </div>
       </nav>
+
+      <!-- HERO SECTION -->
+       <div class="mt-24">
+        <h1 class="w-[100%] lg:w-[450px] font-bold text-center m-auto text-[50px] font">Let’s make design
+            fast and easy</h1>
+        <p class="w-[100%] lg:w-[490px] mt-5 leading-7 text-center m-auto sm:text-[18px] font">The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
+        <!-- <form action="#">
+            <input type="text" class="bg-transparent border">
+        </form> -->
+       </div>
     </header>
 
     <script src="./app2.js"></script>
